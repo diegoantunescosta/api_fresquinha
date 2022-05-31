@@ -14,7 +14,7 @@
 	<name>fresquinha_mysql</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>8</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -43,37 +43,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>3.8.0</version>
-				<configuration>
-					<release>12</release>
-					<compilerArgs>--enable-preview</compilerArgs>
-				</configuration>
-			</plugin>
-			<!-- This is just to make sure the class is set as main class to execute from the jar-->
-			
-				<plugin>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-maven-plugin</artifactId>
-					<version>${project.parent.version}</version>
-				
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-						<configuration>
-							<transformers>
-								<transformer
-										implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-								<transformer
-										implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>com.stackoverflow.nullpointer.expression.SwitchExpressions</mainClass>
-								</transformer>
-							</transformers>
-						</configuration>
-					</execution>
-				</executions>
+				<version>1.2.7.RELEASE</version>
 			</plugin>
 		</plugins>
 	</build>
