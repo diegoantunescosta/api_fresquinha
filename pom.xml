@@ -14,7 +14,7 @@
 	<name>fresquinha_mysql</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -47,8 +47,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		
-	</dependencies>
+		</dependencies>
 
 	<build>
 		<plugins>
