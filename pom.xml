@@ -50,10 +50,12 @@
 				</configuration>
 			</plugin>
 			<!-- This is just to make sure the class is set as main class to execute from the jar-->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.1.0</version>
+			
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<version>${project.parent.version}</version>
+				
 				<executions>
 					<execution>
 						<phase>package</phase>
